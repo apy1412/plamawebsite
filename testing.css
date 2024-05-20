@@ -1,0 +1,84 @@
+:root {
+  --bgdark: #3c402f;
+  --fclight: #d9d9d9;
+  --ffheading: "Oswald", sans-serif;
+  --ffbody: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ffbody);
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ffheading);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* services section */
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+  gap: 2rem;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px auto 1fr;
+}
+
+.services-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  object-fit: cover;
+  width: 100%;
+}
+.services-heading {
+  grid-row: 2/3;
+  font-family: var(--ffheading);
+}
+.service__content {
+  grid-row: 3/4;
+}
+
+.num {
+  font-size: 12.8rem;
+}
+.sub-heading {
+  font-size: 3.6rem;
+}
