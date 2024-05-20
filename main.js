@@ -20,7 +20,7 @@ const next = document.querySelector('.right');
 const prev = document.querySelector('.left');
 const navLists = document.querySelectorAll('.nav__list a');
 
-const auto = false;
+const auto = true;
 const intervalTime = 5000;
 let slideInterval; 
 
